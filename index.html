@@ -5,10 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link href="./style.css" rel="stylesheet" />
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script src="./assets/js/util.js"></script>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/ctrl.js"></script>
+    <script src="./assets/js/home.js"></script>
   </head>
   <body>
-    <div></div>
+    <div id="content">
+      <form id="main_form">
+        <div class="acd-block open">
+          <label class="acd-label">
+            <span><i class="icon-close"></i></span>
+            URL:
+            <input type="text" name="URL" size="50" />
+            <span><i class="icon-plus"></i></span>
+            <span><i class="icon-copy"></i></span>
+          </label>
+          <div class="acd-content">
+            PARAM:
+            <input type="text" name="KEY" />
+            <input type="text" name="VALUE" />
+            <span>追加</span>
+          </div>
+        </div>
+        <div class="acd-block">
+          <label class="acd-label">
+            <span><i class="icon-open"></i></span>
+            URL:
+            <input type="text" name="URL" size="50" />
+            <span><i class="icon-plus"></i></span>
+            <span><i class="icon-copy"></i></span>
+          </label>
+          <div class="acd-content">
+            PARAM:
+            <input type="text" name="KEY" />
+            <input type="text" name="VALUE" />
+            <span>追加</span>
+          </div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>

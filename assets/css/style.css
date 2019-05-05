@@ -1,0 +1,57 @@
+#content .acd-block label span {
+  padding: 0 2px 0 2px;
+}
+
+#content .acd-block .acd-label {
+  background: #333;
+  color: #fff;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+
+#content .acd-block .acd-content {
+  border: 1px solid #333;
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+#content .acd-block.open .acd-content {
+  height: 40px;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+}
+
+#content i {
+  font-style: normal;
+}
+
+#content .icon-open::before {
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+#content .icon-close::before {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+#content .icon-copy::before {
+  content: "\f0c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+#content .icon-plus::before {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+/*# sourceMappingURL=style.css.map */
