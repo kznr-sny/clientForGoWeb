@@ -31,13 +31,13 @@
   font-style: normal;
 }
 
-#content .icon-open::before {
+#content .icon-close::before {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-#content .icon-close::before {
+#content .icon-open::before {
   content: "\f106";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;

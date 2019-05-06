@@ -3,7 +3,7 @@
 (g => {
   const o = {
     init: function() {
-      let self = this;
+      const self = this;
     },
     ajax_post_json: function(url = null, data = {}) {
       if (!url || 0 === Object.keys(data).length) {
@@ -12,22 +12,19 @@
       const method = "POST";
       const body = JSON.stringify(data);
 
-      fetch(url, { method: method, body: body })
-        .then(res => {
-          if (res.ok) {
-            return res.json();
-          } else {
-            throw new Error();
-          }
-        })
-        .then(jsonData => {
-          console.log(jsonData);
-          return JSON.stringify(jsonData);
-        })
-        .catch(err => {
-          console.log(err);
-          return {};
-        });
+      return new Promise((resolve, reject) => {
+        fetch(url, { method: method, body: body })
+          .then(res => {
+            if (res.ok) {
+              resolve(res.json());
+            } else {
+              reject(new Error());
+            }
+          })
+          .catch(error => {
+            reject(error);
+          });
+      });
     }
   };
 

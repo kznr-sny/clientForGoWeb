@@ -3,7 +3,7 @@
 (g => {
   const o = {
     init: function() {
-      let self = this;
+      const self = this;
       console.log("util");
     }
   };
